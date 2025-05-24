@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. K. Sarath Chander - E-Portfolio</title>
+    <style>
+        /* Reset some default styles for consistency */
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li,
+        button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3; /* Blue background */
+            color: #fff; /* White text */
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column; /* Stack header content and navigation */
+        }
+
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%; /* Take full width */
+        }
+
+        header h1 {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact-info p {
+            margin-bottom: 0;
+        }
+
+        .navigation-tabs {
+            background-color: #f0f0f0; /* Light background for tabs */
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling for many tabs */
+        }
+
+        .navigation-tabs button {
+            background: none;
+            border: none;
+            color: #0056b3;
+            font-weight: bold;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-tabs button:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .project,
+        .achievement,
+        .extra {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .navigation-tabs {
+                display: flex;
+            }
+
+            .navigation-tabs button {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>G. K. Sarath Chander</h1>
+            <div class="contact-info">
+                <p><a href="mailto:sarathchander4@gmail.com">sarathchander4@gmail.com</a></p>
+                <p>+91 63058 79053</p>
+                <p><a href="https://www.linkedin.com/in/sarath-chander-963658259">LinkedIn</a> | <a href="https://github.com/SarathChander04/minor-project">Github</a></p>
+            </div>
+        </div>
+        <div class="navigation-tabs">
+            <button onclick="scrollToSection('education')">Education</button>
+            <button onclick="scrollToSection('projects')">Projects</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+            <button onclick="scrollToSection('certifications')">Certifications</button>
+            <button onclick="scrollToSection('achievements')">Achievements</button>
+            <button onclick="scrollToSection('extra-curricular')">Extra-curricular</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="education" class="content-section">
+            <h2>Education</h2>
+            <p>B.Tech in Computer Science Engineering, BVRIT, Narsapur (Oct 2022 - May 2026)</p>
+            <p>Related Coursework: Ethical Hacking Techniques, Malware and Vulnerability Analysis, Computer Forensics,
+                Computer Networks, Operating System and System Architecture, Database Management Systems, DSA, Theory of
+                Computation.</p>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Comparative Analysis of Various AES Algorithms using Image and Text Based Steganography</h3>
+                <p>Conducted comparative analysis of AES encryption algorithms (128-bit, 192-bit, and 256-bit) to evaluate
+                    encryption effectiveness and distortion.</p>
+                <p>Analyzed encryption performance and security-efficiency trade-offs in image-based data concealment, gaining
+                    experience in cryptography and cybersecurity.</p>
+            </div>
+            <div class="project">
+                <h3>2-Player Games</h3>
+                <p>Developed Rock Paper Scissors in Python and Tic Tac Toe in C, using interactive input, randomization, and
+                    structured game logic for fair gameplay.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2>Skills and Technologies</h2>
+            <p>Skills: Information Security, Computer Networks, Operating Systems, Python, C, Java, Leadership,
+                Adaptability, Perfectionist, People-management, Stress-management.</p>
+            <p>Technologies: Nmap, Wireshark, Metasploit, BurpSuite, JackTheRipper, Hashcat, Windows, Linux, AWS</p>
+        </section>
+
+        <section id="certifications" class="content-section">
+            <h2>Certifications</h2>
+            <p>Google Cybersecurity Certificate</p>
+            <p>Certified Ethical Hacker-V13(In Progress)</p>
+            <p>Ethical Hacking Certificate by Elan and nVision, IIT Hyderabad</p>
+        </section>
+
+        <section id="achievements" class="content-section">
+            <h2>Achievements</h2>
+            <div class="achievement">
+                <h3>HackathonX, NCSRC (Feb 2025)</h3>
+                <p>HackathonX Semifinalist (VIT AP & NCSRC) - Top 11 in CTF challenge featuring Cryptography, Steganography,
+                    Networking and Web related problems.</p>
+            </div>
+            <div class="achievement">
+                <h3>Cybersecurity Virtual Internship by IBM, CSRSBox</h3>
+                <p>Gained hands-on experience in cybersecurity fundamentals, threat analysis, and risk mitigation.</p>
+            </div>
+            <div class="achievement">
+                <h3>CyberSecurity Analyst Job Sim, Tata Consultancy Services</h3>
+                <p>Completed a job simulation collaborating with a Cybersecurity Consulting team.</p>
+            </div>
+        </section>
+
+        <section id="extra-curricular" class="content-section">
+            <h2>Extra-curricular</h2>
+            <div class="extra">
+                <h3>Deputy Secretary, NSS - BVRIT (Oct 2024 - Present)</h3>
+                <p>Led and coordinated social awareness programs, community service initiatives, and volunteer activities,
+                    ensuring effective execution and student engagement.</p>
+            </div>
+            <div class="extra">
+                <h3>Organizing Committee, MUN - BVRIT (April 2025)</h3>
+                <p>Assisted in planning, coordination, and execution of the Model United Nations event.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function scrollToSection(id) {
+            const targetElement = document.getElementById(id);
+            const headerHeight = document.querySelector('header').offsetHeight;
+
+            if (targetElement) {
+                const targetPosition = targetElement.offsetTop - headerHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
